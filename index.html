@@ -11,7 +11,7 @@
             color: #fff;
             min-height: 100vh;
         }
-        
+
         .profile-img {
             width: 200px;
             height: 200px;
@@ -26,28 +26,16 @@
             border-radius: 20px;
             margin: 20px 0;
             padding: 15px;
-            transition: transform 0.3s;
-        }
-
-        .skill-bar:hover {
-            transform: scale(1.02);
         }
 
         .progress {
             height: 25px;
             border-radius: 20px;
             background: #444;
-            overflow: visible;
         }
 
         .progress-bar {
             border-radius: 20px;
-            position: relative;
-            animation: progress-animation 2s ease-in-out;
-        }
-
-        @keyframes progress-animation {
-            0% { width: 0; }
         }
 
         .programming .progress-bar { background: #00ff88; }
@@ -63,7 +51,25 @@
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border-radius: 20px;
+            padding: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            color: #00ff88;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -78,15 +84,13 @@
 
         <!-- Skills Section -->
         <div class="row g-4">
-            <!-- Programming Skills -->
             <div class="col-md-6">
-                <div class="card-effect p-4">
+                <div class="card-effect">
                     <h3 class="section-title">Programming Mastery</h3>
                     <div class="programming">
                         <div class="skill-bar">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>Java</span>
-                                <span>80%</span>
+                                <span>Java</span><span>80%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" style="width: 80%"></div>
@@ -94,8 +98,7 @@
                         </div>
                         <div class="skill-bar">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>Python</span>
-                                <span>0%</span>
+                                <span>Python</span><span>0%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" style="width: 0%"></div>
@@ -103,8 +106,7 @@
                         </div>
                         <div class="skill-bar">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>Coding Web</span>
-                                <span>60%</span>
+                                <span>Coding Web</span><span>60%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" style="width: 60%"></div>
@@ -112,8 +114,7 @@
                         </div>
                         <div class="skill-bar">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>JavaScript</span>
-                                <span>50%</span>
+                                <span>JavaScript</span><span>50%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" style="width: 50%"></div>
@@ -121,8 +122,7 @@
                         </div>
                         <div class="skill-bar">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>Coding App</span>
-                                <span>80%</span>
+                                <span>Coding App</span><span>80%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" style="width: 80%"></div>
@@ -130,8 +130,7 @@
                         </div>
                         <div class="skill-bar">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>PHP</span>
-                                <span>0%</span>
+                                <span>PHP</span><span>0%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" style="width: 0%"></div>
@@ -141,15 +140,13 @@
                 </div>
             </div>
 
-            <!-- Trading Skills -->
             <div class="col-md-6">
-                <div class="card-effect p-4">
+                <div class="card-effect">
                     <h3 class="section-title">Trading Excellence</h3>
                     <div class="trading">
                         <div class="skill-bar">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>Technical Analysis</span>
-                                <span>95%</span>
+                                <span>Technical Analysis</span><span>95%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" style="width: 95%"></div>
@@ -157,8 +154,7 @@
                         </div>
                         <div class="skill-bar">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>Fundamental Analysis</span>
-                                <span>99%</span>
+                                <span>Fundamental Analysis</span><span>99%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" style="width: 99%"></div>
@@ -166,6 +162,25 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Project Section -->
+        <div class="mt-5">
+            <h3 class="section-title">Project Highlights</h3>
+
+            <!-- Project 1 -->
+            <div class="project-card p-3">
+                <h5>Injector Mobile Legends</h5>
+                <p>Aplikasi yang memungkinkan pengguna menyuntikkan skin premium secara gratis.</p>
+                <a href="LINK_PROJEK_1" target="_blank">Lihat Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card p-3">
+                <h5>Belajar Trading</h5>
+                <p>Platform edukasi untuk mempelajari teknik trading dari dasar hingga tingkat lanjut.</p>
+                <a href="LINK_PROJEK_2" target="_blank">Mulai Belajar</a>
             </div>
         </div>
     </div>
