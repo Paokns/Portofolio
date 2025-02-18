@@ -1,39 +1,30 @@
-<!DOCTYPE html>  
-<html lang="en">    
-<head>      
-    <meta charset="UTF-8">      
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
-    <title>Professional Portfolio</title>      
-    <!-- CDN Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">      
-    <style>      
-        body {      
-            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);      
-            color: #fff;      
-            min-height: 100vh;      
-            margin: 0;
-        }  
-
-        /* Profile Image */
-        .profile-img {      
-            width: 200px;      
-            height: 200px;      
-            border-radius: 50%;      
-            object-fit: cover;      
-            border: 5px solid #00ff88;      
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);      
-            transition: transform 0.3s ease;
-        }    
-
-        .profile-img:hover {
-            transform: scale(1.1);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #fff;
+            min-height: 100vh;
         }
 
-        /* Skill Bar */
-        .skill-bar {      
-            background: #333;      
-            border-radius: 20px;      
-            margin: 20px 0;      
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00ff88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+
+        .skill-bar {
+            background: #333;
+            border-radius: 20px;
+            margin: 20px 0;
             padding: 15px;
         }
 
@@ -57,14 +48,12 @@
         .programming .progress-bar { background: #00ff88; }
         .trading .progress-bar { background: #ff0066; }
 
-        /* Section Title */
         .section-title {
             border-left: 5px solid #00ff88;
             padding-left: 15px;
             margin: 30px 0;
         }
 
-        /* Card Effect */
         .card-effect {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -78,7 +67,6 @@
             padding: 15px;
             border-radius: 10px;
             margin-bottom: 15px;
-            transition: background 0.3s ease;
         }
 
         .project-card a {
@@ -90,171 +78,122 @@
         .project-card a:hover {
             text-decoration: underline;
         }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .profile-img {
-                width: 150px;
-                height: 150px;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .row.g-4 {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .col-md-6 {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .project-card {
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .profile-img {
-                width: 120px;
-                height: 120px;
-            }
-
-            .section-title {
-                font-size: 1.2rem;
-            }
-
-            .project-card {
-                padding: 8px;
-            }
-        }
-
-        /* Animation Optimization for Smooth UI */
-        .progress-bar {
-            transition: width 1s ease-in-out; /* Smooth animation */
-        }
-    </style>  
+    </style>
 </head>
-
-<body>      
-    <div class="container py-5">      
-        <!-- Profile Section -->      
-        <div class="text-center mb-5">      
-            <!-- Link to Instagram added -->
+<body>
+    <div class="container py-5">
+        <!-- Profile Section -->
+        <div class="text-center mb-5">
             <a href="https://www.instagram.com/mstrdevelop_er?igsh=MTBsMWh1dXBzcG5sNg==" target="_blank">
-                <img src="https://github.com/Paokns/Image-apk-new/raw/main/IMG_20240420_220339_835.jpg" alt="Profile Photo" class="profile-img mb-4">      
-            </a>      
-            <h1 class="display-4 fw-bold">Riyan Ahmad</h1>      
-            <p class="lead">Mobile Legends Injector Developer | Professional Trader | Full Stack Developer</p>      
-        </div>  
+                <img src="https://github.com/Paokns/Image-apk-new/raw/main/IMG_20240420_220339_835.jpg" alt="Profile Photo" class="profile-img mb-4">
+            </a>
+            <h1 class="display-4 fw-bold">Riyan Ahmad</h1>
+            <p class="lead">Mobile Legends Injector Developer | Professional Trader | Full Stack Developer</p>
+        </div>
 
-        <!-- Skills Section -->      
-        <div class="row g-4">      
-            <div class="col-md-6">      
-                <div class="card-effect">      
-                    <h3 class="section-title">Programming Mastery</h3>      
-                    <div class="programming">      
-                        <div class="skill-bar">      
-                            <div class="d-flex justify-content-between mb-2">      
-                                <span>Java</span><span>80%</span>      
-                            </div>      
-                            <div class="progress">      
-                                <div class="progress-bar" style="width: 80%"></div>      
-                            </div>      
-                        </div>      
-                        <div class="skill-bar">      
-                            <div class="d-flex justify-content-between mb-2">      
-                                <span>Python</span><span>0%</span>      
-                            </div>      
-                            <div class="progress">      
-                                <div class="progress-bar" style="width: 0%"></div>      
-                            </div>      
-                        </div>      
-                        <div class="skill-bar">      
-                            <div class="d-flex justify-content-between mb-2">      
-                                <span>Coding Web</span><span>60%</span>      
-                            </div>      
-                            <div class="progress">      
-                                <div class="progress-bar" style="width: 60%"></div>      
-                            </div>      
-                        </div>      
-                        <div class="skill-bar">      
-                            <div class="d-flex justify-content-between mb-2">      
-                                <span>JavaScript</span><span>50%</span>      
-                            </div>      
-                            <div class="progress">      
-                                <div class="progress-bar" style="width: 50%"></div>      
-                            </div>      
-                        </div>      
-                        <div class="skill-bar">      
-                            <div class="d-flex justify-content-between mb-2">      
-                                <span>Coding App</span><span>80%</span>      
-                            </div>      
-                            <div class="progress">      
-                                <div class="progress-bar" style="width: 80%"></div>      
-                            </div>      
-                        </div>      
-                        <div class="skill-bar">      
-                            <div class="d-flex justify-content-between mb-2">      
-                                <span>PHP</span><span>0%</span>      
-                            </div>      
-                            <div class="progress">      
-                                <div class="progress-bar" style="width: 0%"></div>      
-                            </div>      
-                        </div>      
-                    </div>      
-                </div>      
-            </div>    
+        <!-- Skills Section -->
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card-effect">
+                    <h3 class="section-title">Programming Mastery</h3>
+                    <div class="programming">
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Java</span><span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Python</span><span>0%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Coding Web</span><span>60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>JavaScript</span><span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Coding App</span><span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>PHP</span><span>0%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="col-md-6">      
-                <div class="card-effect">      
-                    <h3 class="section-title">Trading Excellence</h3>      
-                    <div class="trading">      
-                        <div class="skill-bar">      
-                            <div class="d-flex justify-content-between mb-2">      
-                                <span>Technical Analysis</span><span>95%</span>      
-                            </div>      
-                            <div class="progress">      
-                                <div class="progress-bar" style="width: 95%"></div>      
-                            </div>      
-                        </div>      
-                        <div class="skill-bar">      
-                            <div class="d-flex justify-content-between mb-2">      
-                                <span>Fundamental Analysis</span><span>99%</span>      
-                            </div>      
-                            <div class="progress">      
-                                <div class="progress-bar" style="width: 99%"></div>      
-                            </div>      
-                        </div>      
-                    </div>      
-                </div>      
-            </div>      
-        </div>    
+            <div class="col-md-6">
+                <div class="card-effect">
+                    <h3 class="section-title">Trading Excellence</h3>
+                    <div class="trading">
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Technical Analysis</span><span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Fundamental Analysis</span><span>99%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 99%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Project Section -->      
-        <div class="mt-5">      
-            <h3 class="section-title">Project Highlights</h3>      
+        <!-- Project Section -->
+        <div class="mt-5">
+            <h3 class="section-title">Project Highlights</h3>
 
-            <!-- Project 1 -->      
-            <div class="project-card p-3">      
-                <h5>Injector Mobile Legends</h5>      
-                <p>Aplikasi yang memungkinkan pengguna menyuntikkan skin premium secara gratis.</p>      
-                <a href="LINK_PROJEK_1" target="_blank">Lihat Project</a>      
-            </div>      
+            <!-- Project 1 -->
+            <div class="project-card p-3">
+                <h5>Injector Mobile Legends</h5>
+                <p>Aplikasi yang memungkinkan pengguna menyuntikkan skin premium secara gratis.</p>
+                <a href="LINK_PROJEK_1" target="_blank">Lihat Project</a>
+            </div>
 
-            <!-- Project 2 -->      
-            <div class="project-card p-3">      
-                <h5>Belajar Trading</h5>      
-                <p>Platform edukasi untuk mempelajari teknik trading dari dasar hingga tingkat lanjut.</p>      
-                <a href="LINK_PROJEK_2" target="_blank">Mulai Belajar</a>      
-            </div>      
-        </div>  
-    </div>    
+            <!-- Project 2 -->
+            <div class="project-card p-3">
+                <h5>Belajar Trading</h5>
+                <p>Platform edukasi untuk mempelajari teknik trading dari dasar hingga tingkat lanjut.</p>
+                <a href="LINK_PROJEK_2" target="_blank">Mulai Belajar</a>
+            </div>
+        </div>
+    </div>
 
-    <!-- JS Dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
-</body>      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
