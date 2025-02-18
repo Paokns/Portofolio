@@ -78,6 +78,31 @@
         .project-card a:hover {
             text-decoration: underline;
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .section-title {
+                font-size: 1.25rem;
+            }
+
+            .project-card {
+                padding: 10px;
+            }
+
+            .skill-bar {
+                margin: 10px 0;
+            }
+
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -93,7 +118,7 @@
 
         <!-- Skills Section -->
         <div class="row g-4">
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6">
                 <div class="card-effect">
                     <h3 class="section-title">Programming Mastery</h3>
                     <div class="programming">
@@ -149,7 +174,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6">
                 <div class="card-effect">
                     <h3 class="section-title">Trading Excellence</h3>
                     <div class="trading">
