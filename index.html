@@ -32,10 +32,17 @@
             height: 25px;
             border-radius: 20px;
             background: #444;
+            overflow: hidden;
         }
 
         .progress-bar {
             border-radius: 20px;
+            position: relative;
+            animation: progress-animation 2s ease-in-out;
+        }
+
+        @keyframes progress-animation {
+            0% { width: 0; }
         }
 
         .programming .progress-bar { background: #00ff88; }
